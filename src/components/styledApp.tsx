@@ -129,4 +129,8 @@ export const Rodape = styled.footer `
         text-decoration: none;
         color:#FFFFFF;;
     }
+
+    a:hover {
+        text-decoration: underline;
+    }
 `
