@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Filmes-em-Cartaz/static/css/main.7dd86f9f.css",
+    "main.js": "/Filmes-em-Cartaz/static/js/main.20cd3590.js",
+    "static/js/787.26d5a08c.chunk.js": "/Filmes-em-Cartaz/static/js/787.26d5a08c.chunk.js",
+    "index.html": "/Filmes-em-Cartaz/index.html",
+    "main.7dd86f9f.css.map": "/Filmes-em-Cartaz/static/css/main.7dd86f9f.css.map",
+    "main.20cd3590.js.map": "/Filmes-em-Cartaz/static/js/main.20cd3590.js.map",
+    "787.26d5a08c.chunk.js.map": "/Filmes-em-Cartaz/static/js/787.26d5a08c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7dd86f9f.css",
+    "static/js/main.20cd3590.js"
+  ]
+}
