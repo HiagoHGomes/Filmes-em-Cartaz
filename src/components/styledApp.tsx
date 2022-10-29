@@ -2,7 +2,6 @@ import styled from 'styled-components'
 
 export const Container = styled.div `
     font-family: Arial, Helvetica, sans-serif;
-    /* height: 100vh; */
    
 `
 
@@ -13,9 +12,14 @@ export const Cabecalho = styled.header `
     flex-direction: column;
     
     nav{
-        margin-top: 30px;
+        position: fixed;
+        top: 0;
+        margin-top: -7px;
+        padding: 20px;
         display: flex;
         justify-content: center;
+        background-color: rgba(187, 34, 47, 0.8);
+        width: 100vw;
         }
     
     nav a {
@@ -36,30 +40,35 @@ export const Cabecalho = styled.header `
         font-size: 50px;
         color: #FFFFFF;
         font-weight: bolder;
+        text-shadow: 2px 2px black;
+        margin-top: 60px;
     }
   
 `
 
 export const Principal = styled.main `
     .paralelograma {
-    margin-top: 45px;
-    width: 275px;
-    height: 45px;
-    transform: skew(-20deg);
+        margin-top: 45px;
+        width: 275px;
+        height: 45px;
+        transform: skew(-20deg);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(187, 34, 47);
+        margin-left: 80px;
+        font-family: 'Poppins', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        color: #F9F9F9;
+        text-decoration: none; 
+        margin-bottom: 20px;
+}
+
+.paralelograma:hover{
     border: 2px solid #BB222F;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 20px;
-    background-color: #BB222F;
-    margin-left: 20px;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    color: #F9F9F9;
-    text-decoration: none; 
-    margin-bottom: 20px;
+    background-color: rgba(0,0,0, 0.5);
 }
 
 .grid{
@@ -74,9 +83,8 @@ export const Principal = styled.main `
     width: 200px;
     margin: 25px;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
+    border-radius: 0 15px;
+    box-shadow: 0 25px 50px -12px black;
 }
 
 .filmes h1 {
@@ -87,10 +95,16 @@ export const Principal = styled.main `
 
 button {
     background-color: #BB222F;
+    border: 2px solid #BB222F;
     padding: 10px;
-    border: none;
     border-radius: 15px;
-    margin: 8px;
+    margin: 8px 0 25px 0;
+}
+
+button:hover {
+    border: 2px solid #BB222F;
+    background-color: rgba(0,0,0, 0.5);
+    
 }
 
 button a {
@@ -100,4 +114,19 @@ button a {
     color: #F9F9F9;
 }
 
+`
+
+
+export const Rodape = styled.footer `
+    text-align: center;
+    width: 100%;
+    padding: 3px;
+    background-color: rgba(187, 34, 47, 0.8);
+    color: #FFFFFF;
+    padding: 8px;
+
+    a{
+        text-decoration: none;
+        color:#FFFFFF;;
+    }
 `

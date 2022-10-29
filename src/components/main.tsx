@@ -25,9 +25,9 @@ export const Main = ()=> {
             <div className="filmes">
                 <img src={item.avatar} alt="" width={200}/>
                 <h1>{item.titulo}</h1>
-                <button><a href="">Comprar Ingresso</a></button>
             </div>
             ))}
+            <button><a href="https://www.cinesystem.com.br/" target={'_blank'}>Comprar Ingresso</a></button>
       </div>
         </Principal>
     )
