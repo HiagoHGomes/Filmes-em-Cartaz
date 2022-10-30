@@ -20,15 +20,17 @@ export const Main = ()=> {
         <Principal>
             <div className="paralelograma">Filmes em Cartaz no Momento: {filmes.length}</div>
 
-        <div className="grid">
-            {filmes.map((item, index)=>(
-            <div className="filmes">
-                <img src={item.avatar} alt="" width={200}/>
-                <h1>{item.titulo}</h1>
+            <div className="grid">
+                {filmes.map((item, index)=>(
+                <div className="filmes">
+                    <img src={item.avatar} alt="" width={200}/>
+                    <h1>{item.titulo}</h1>
+                </div>
+                ))}
             </div>
-            ))}
-            <button><a href="https://www.cinesystem.com.br/" target={'_blank'}>Comprar Ingresso</a></button>
-      </div>
+            <div className="botao">
+                <button><a href="https://www.cinesystem.com.br/" target={'_blank'}>Comprar Ingresso</a></button>
+            </div>
         </Principal>
     )
 }

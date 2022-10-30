@@ -5,6 +5,7 @@ export const Container = styled.div `
    
 `
 
+//Header
 export const Cabecalho = styled.header `
     display: flex;
     align-items: center;
@@ -43,10 +44,11 @@ export const Cabecalho = styled.header `
         text-shadow: 2px 2px black;
         margin-top: 60px;
     }
-  
 `
 
-export const Principal = styled.main `
+
+//Main
+export const Principal = styled.main `    
     .paralelograma {
         margin-top: 45px;
         width: 275px;
@@ -93,12 +95,18 @@ export const Principal = styled.main `
 
 }
 
+.botao {
+    display: flex;
+    justify-content: center;
+}
+
 button {
     background-color: #BB222F;
     border: 2px solid #BB222F;
     padding: 10px;
     border-radius: 15px;
     margin: 8px 0 25px 0;
+    
 }
 
 button:hover {
@@ -116,7 +124,7 @@ button a {
 
 `
 
-
+//Footer
 export const Rodape = styled.footer `
     text-align: center;
     width: 100%;
