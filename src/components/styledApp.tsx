@@ -44,6 +44,28 @@ export const Cabecalho = styled.header `
         text-shadow: 2px 2px black;
         margin-top: 60px;
     }
+    
+    //Responsividade:
+    @media (max-width: 780px) {
+        .subHeader {
+           text-align: center;
+           margin-left: 5px;
+           margin-right: 5px;
+        }
+    }
+
+    @media (max-width: 415px) {
+
+        nav a{
+            font-size: 13px;
+        }
+
+        .subHeader h1{
+            margin-top: 100px;
+            font-size: 30px;
+        }
+    }
+
 `
 
 
@@ -92,6 +114,7 @@ export const Principal = styled.main `
 .filmes h1 {
     color: white;
     font-size: 12px;
+    padding: 5px;
 
 }
 
