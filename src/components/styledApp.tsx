@@ -142,3 +142,11 @@ export const Rodape = styled.footer `
         text-decoration: underline;
     }
 `
+
+
+export const Load = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+`

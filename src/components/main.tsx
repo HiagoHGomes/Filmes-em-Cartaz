@@ -1,28 +1,40 @@
 import { useState, useEffect } from "react";
 import {Filmes} from '../components/types/filmes'
 import { Principal } from "./styledApp";
+import { Carregar } from "./load";
 
 export const Main = ()=> {
     const [filmes, SetFilmes] = useState<Filmes[]>([]);
+    const [load, setLoad] = useState(false);
 
   useEffect(()=>{
     Script()
     }, []);
 
- function Script() {
-    fetch('https://api.b7web.com.br/cinema/').then((response)=>{
-        return response.json();
-    }).then((json)=>{
-        SetFilmes(json)
-    });
+ const Script = async ()=> {
+    setLoad(true)
+    let responde = await fetch('https://api.b7web.com.br/cinema/');
+    let json = await responde.json();
+    setLoad(false)
+    SetFilmes(json)
 };
     return(
         <Principal>
-            <div className="paralelograma">Filmes em Cartaz no Momento: {filmes.length}</div>
+            {!load &&
+                <div className="paralelograma">Filmes em Cartaz no Momento: {filmes.length}</div>
+            }
+
+            {load &&
+                <Carregar/>
+             }
+            
 
             <div className="grid">
                 {filmes.map((item, index)=>(
                 <div className="filmes">
+                    {load &&
+                        <div>Carregando...</div>
+                    }
                     <img src={item.avatar} alt="" width={200}/>
                     <h1>{item.titulo}</h1>
                 </div>
