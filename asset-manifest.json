@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/Filmes-em-Cartaz/static/css/main.7dd86f9f.css",
-    "main.js": "/Filmes-em-Cartaz/static/js/main.c88741f7.js",
+    "main.js": "/Filmes-em-Cartaz/static/js/main.6a1964cd.js",
     "static/js/787.26d5a08c.chunk.js": "/Filmes-em-Cartaz/static/js/787.26d5a08c.chunk.js",
     "static/media/Loading.gif": "/Filmes-em-Cartaz/static/media/Loading.3c7bffe6f1c9c4d47ab5.gif",
     "index.html": "/Filmes-em-Cartaz/index.html",
     "main.7dd86f9f.css.map": "/Filmes-em-Cartaz/static/css/main.7dd86f9f.css.map",
-    "main.c88741f7.js.map": "/Filmes-em-Cartaz/static/js/main.c88741f7.js.map",
+    "main.6a1964cd.js.map": "/Filmes-em-Cartaz/static/js/main.6a1964cd.js.map",
     "787.26d5a08c.chunk.js.map": "/Filmes-em-Cartaz/static/js/787.26d5a08c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7dd86f9f.css",
-    "static/js/main.c88741f7.js"
+    "static/js/main.6a1964cd.js"
   ]
 }
