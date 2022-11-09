@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import {Filmes} from '../components/types/filmes'
 import { Principal } from "./styledApp";
 import { Carregar } from "./load";
+import Swal from 'sweetalert2'
 
 export const Main = ()=> {
     const [filmes, SetFilmes] = useState<Filmes[]>([]);
@@ -12,11 +13,22 @@ export const Main = ()=> {
     }, []);
 
  const Script = async ()=> {
+    try {
     setLoad(true)
     let responde = await fetch('https://api.b7web.com.br/cinema/');
     let json = await responde.json();
     setLoad(false)
     SetFilmes(json)
+        
+    } catch (error) {
+        setLoad(false)
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Algo de errado não está certo, recarregue a página para tentar novamente!',
+            iconColor: '#bb222f'
+          })
+    }
 };
     return(
         <Principal>
