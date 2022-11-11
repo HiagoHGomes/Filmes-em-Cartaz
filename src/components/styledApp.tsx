@@ -108,7 +108,7 @@ export const Principal = styled.main `
     margin: 25px;
     text-align: center;
     border-radius: 0 15px;
-    box-shadow: 0 20px 25px -5px #46050b;
+    box-shadow: 0 20px 25px -5px #000000;
 }
 
 .filmes h1 {
